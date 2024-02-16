@@ -185,7 +185,7 @@ export default class CountryPicker extends Component {
               </Text>
             )}
 
-            {this.state.hideSearchBar ? null : (
+            {/* {this.state.hideSearchBar ? null : ( */}
               <TextInput
                 style={this.props.searchBarStyle}
                 onChangeText={(text) => this._searchFilterFunction(text)}
@@ -194,9 +194,9 @@ export default class CountryPicker extends Component {
                 returnKeyType={'done'}
                 blurOnSubmit={true}
               />
-            )}
+            {/* )} */}
 
-            <TouchableOpacity
+            {/* <TouchableOpacity
               disabled={this.props.disable}
               activeOpacity={0.5}
               style={styles.searchImageStyle}
@@ -211,7 +211,7 @@ export default class CountryPicker extends Component {
                 style={styles.searchImageStyle}
                 source={this.props.searchButtonImage}
               />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
 
           <FlatList
